@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1K00.sch"?>
+<?xml-model href="PDS4_LADEE_1L00_1100.sch"?>
+
+<Product_Observational
+    xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:ladee="http://pds.nasa.gov/pds4/mission/ladee/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1K00.xsd 
+                        http://pds.nasa.gov/pds4/mission/ladee/v1 PDS4_LADEE_1L00_1100.xsd">
+  
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:ladee_uvs:raw:1691l_0557</logical_identifier>
+    <version_id>3.0</version_id>
+    <title>Spectrum 557 in activity 1691 (BackwardLimbWithoutNod)</title>
+    <information_model_version>1.20.0.0</information_model_version>
+    <product_class>Product_Observational</product_class>
+    <Modification_History>
+      <Modification_Detail>
+	<modification_date>2023-12-14</modification_date>
+    <version_id>3.0</version_id>
+    <description>Updated labels to more modern Information Model</description>
+      </Modification_Detail>
+      <Modification_Detail>
+        <modification_date>2014-09-17</modification_date>
+    <version_id>1.0</version_id>
+        <description>First version of UVS products</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Observation_Area>
+    <Time_Coordinates>
+      <start_date_time>2014-03-17T12:51:30.041Z</start_date_time>
+      <stop_date_time>2014-03-17T12:51:32.041Z</stop_date_time>
+    </Time_Coordinates>
+    <Primary_Result_Summary>
+      <purpose>Science</purpose>
+      <processing_level>Raw</processing_level>
+      <description>
+        One raw UVS spectrum.  Each row provides counts for one spectral pixel (bin), including both lit and unlit pixels.
+        Wavelengths corresponding to each pixel can be found in the calibration collection.
+      </description>
+      <Science_Facets>
+        <wavelength_range>Ultraviolet</wavelength_range>
+        <wavelength_range>Visible</wavelength_range>
+        <domain>Atmosphere</domain>
+        <discipline_name>Atmospheres</discipline_name>
+        <facet1>Structure</facet1>
+      </Science_Facets>
+    </Primary_Result_Summary>
+    <Investigation_Area>
+      <name>LADEE</name>
+      <type>Mission</type>
+      <Internal_Reference>
+        <lid_reference>urn:nasa:pds:context:investigation:mission.ladee</lid_reference>
+        <reference_type>data_to_investigation</reference_type>
+      </Internal_Reference>
+    </Investigation_Area>
+    <Observing_System>
+      <name>LADEE</name>
+      <description>Description of LADEE</description>
+      <Observing_System_Component>
+        <name>UVS</name>
+        <type>Instrument</type>
+        <Internal_Reference>
+	  <lid_reference>urn:nasa:pds:context:instrument:ladee.uvs</lid_reference>
+          <reference_type>is_instrument</reference_type>
+        </Internal_Reference>
+      </Observing_System_Component>
+      <Observing_System_Component>
+        <name>Lunar Atmosphere and Dust Environment Explorer (LADEE)</name>
+        <type>Host</type>
+        <Internal_Reference>
+          <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.ladee</lid_reference>
+          <reference_type>is_instrument_host</reference_type>
+        </Internal_Reference>
+      </Observing_System_Component>
+    </Observing_System>
+    <Target_Identification>
+      <name>Moon</name>
+      <type>Satellite</type>
+      <Internal_Reference>
+	<lid_reference>urn:nasa:pds:context:target:satellite.earth.moon</lid_reference>
+        <reference_type>data_to_target</reference_type>
+      </Internal_Reference>
+    </Target_Identification>
+    <Mission_Area>
+      <ladee:LADEE>
+        <ladee:UVS_Specific_Attributes>
+          <ladee:latitude>4.255855799626</ladee:latitude>
+          <ladee:longitude>300.508456801234</ladee:longitude>          
+      <ladee:solar_latitude>2.7306210604547</ladee:solar_latitude>
+      <ladee:solar_longitude>225.233131572759</ladee:solar_longitude>
+      <ladee:altitude unit="km">40.9656054983178</ladee:altitude>
+      <ladee:altitude_above_terrain unit="km">42.5791054983178</ladee:altitude_above_terrain>
+      <ladee:activity_number>1691</ladee:activity_number>
+      <ladee:activity_type>BackwardLimbWithoutNod</ladee:activity_type>
+      <ladee:cosmic_ray_hit_count>0</ladee:cosmic_ray_hit_count>
+      <ladee:cosmic_ray_hit_pixel_00>0</ladee:cosmic_ray_hit_pixel_00>
+      <ladee:cosmic_ray_hit_pixel_01>0</ladee:cosmic_ray_hit_pixel_01>
+      <ladee:cosmic_ray_hit_pixel_02>0</ladee:cosmic_ray_hit_pixel_02>
+      <ladee:cosmic_ray_hit_pixel_03>0</ladee:cosmic_ray_hit_pixel_03>
+      <ladee:cosmic_ray_hit_pixel_04>0</ladee:cosmic_ray_hit_pixel_04>
+      <ladee:cosmic_ray_hit_pixel_05>0</ladee:cosmic_ray_hit_pixel_05>
+      <ladee:cosmic_ray_hit_pixel_06>0</ladee:cosmic_ray_hit_pixel_06>
+      <ladee:cosmic_ray_hit_pixel_07>0</ladee:cosmic_ray_hit_pixel_07>
+      <ladee:cosmic_ray_hit_pixel_08>0</ladee:cosmic_ray_hit_pixel_08>
+      <ladee:cosmic_ray_hit_pixel_09>0</ladee:cosmic_ray_hit_pixel_09>
+      <ladee:cosmic_ray_hit_pixel_10>0</ladee:cosmic_ray_hit_pixel_10>
+      <ladee:cosmic_ray_hit_pixel_11>0</ladee:cosmic_ray_hit_pixel_11>
+      <ladee:cosmic_ray_hit_pixel_12>0</ladee:cosmic_ray_hit_pixel_12>
+      <ladee:cosmic_ray_hit_pixel_13>0</ladee:cosmic_ray_hit_pixel_13>
+      <ladee:cosmic_ray_hit_pixel_14>0</ladee:cosmic_ray_hit_pixel_14>
+      <ladee:cosmic_ray_hit_pixel_15>0</ladee:cosmic_ray_hit_pixel_15>
+      <ladee:cosmic_ray_hit_pixel_16>0</ladee:cosmic_ray_hit_pixel_16>
+      <ladee:drive_current unit="A">1527</ladee:drive_current>
+      <ladee:emission_angle>0</ladee:emission_angle>
+      <ladee:in_sun>7</ladee:in_sun>
+      <ladee:integration_time unit="s">2000</ladee:integration_time>
+      <ladee:moon_fixed_vx unit="m/s">-1.35268807577304</ladee:moon_fixed_vx>
+      <ladee:moon_fixed_vy unit="m/s">-0.740607004174009</ladee:moon_fixed_vy>
+      <ladee:moon_fixed_vz unit="m/s">0.646612645359784</ladee:moon_fixed_vz>
+      <ladee:moon_fixed_x unit="m">900.325506433835</ladee:moon_fixed_x>
+      <ladee:moon_fixed_y unit="m">-1527.933660928</ladee:moon_fixed_y>
+      <ladee:moon_fixed_z unit="m">131.97324383083</ladee:moon_fixed_z>
+      <ladee:peak_counts>5184</ladee:peak_counts>
+      <ladee:phase_angle>0</ladee:phase_angle>
+      <!--  out of sequence
+      <ladee:predicted_attitude_flag>0</ladee:predicted_attitude_flag>
+      -->
+      <ladee:quaternion_w>0.476997144149006</ladee:quaternion_w>
+      <ladee:quaternion_x>0.0896321524558911</ladee:quaternion_x>
+      <ladee:quaternion_y>-0.108708521068535</ladee:quaternion_y>
+      <ladee:quaternion_z>0.867538044795102</ladee:quaternion_z>
+      <ladee:raw_timestamp>29381935523587</ladee:raw_timestamp>
+      <ladee:scan_number>533</ladee:scan_number>
+      <ladee:sequence_number>557</ladee:sequence_number>
+      <ladee:solar_incidence_angle>0</ladee:solar_incidence_angle>
+      <ladee:solar_viewer_boresight_j2000_x>0.79589374179879</ladee:solar_viewer_boresight_j2000_x>
+      <ladee:solar_viewer_boresight_j2000_y>0.585534287806493</ladee:solar_viewer_boresight_j2000_y>
+      <ladee:solar_viewer_boresight_j2000_z>-0.153956973107627</ladee:solar_viewer_boresight_j2000_z>
+      <ladee:solar_viewer_boresight_me_x>0.875350366441588</ladee:solar_viewer_boresight_me_x>
+      <ladee:solar_viewer_boresight_me_y>0.306636716066721</ladee:solar_viewer_boresight_me_y>
+      <ladee:solar_viewer_boresight_me_z>-0.373812333036773</ladee:solar_viewer_boresight_me_z>
+      <ladee:solar_viewer_fov_graze_altitude_above_terrain>42.5791054983178</ladee:solar_viewer_fov_graze_altitude_above_terrain>
+      <ladee:solar_viewer_graze_altitude>40.9656054983177</ladee:solar_viewer_graze_altitude>
+      <ladee:solar_viewer_graze_altitude_above_terrain>42.5791054983177</ladee:solar_viewer_graze_altitude_above_terrain>
+      <ladee:solar_viewer_graze_latitude>4.25585579962493</ladee:solar_viewer_graze_latitude>
+      <ladee:solar_viewer_graze_longitude>300.508456801158</ladee:solar_viewer_graze_longitude>
+      <ladee:solar_viewer_graze_solar_latitude>2.7306210604547</ladee:solar_viewer_graze_solar_latitude>
+      <ladee:solar_viewer_graze_solar_longitude>225.233131572759</ladee:solar_viewer_graze_solar_longitude>
+      <ladee:solar_viewer_solar_elongation>39.919772344666</ladee:solar_viewer_solar_elongation>
+      <ladee:solar_viewer_target>DarkSky</ladee:solar_viewer_target>
+      <ladee:sun_graze_altitude_above_terrain>42.5791054983178</ladee:sun_graze_altitude_above_terrain>
+      <ladee:tec_cold unit="degC">-19.9</ladee:tec_cold>
+      <ladee:tec_enabled>true</ladee:tec_enabled>
+      <ladee:tec_hot unit="degC">8.4</ladee:tec_hot>
+      <ladee:tec_setpoint unit="degC">-20</ladee:tec_setpoint>
+      <ladee:telescope_boresight_j2000_x>0.658424392621595</ladee:telescope_boresight_j2000_x>
+      <ladee:telescope_boresight_j2000_y>0.745308529844626</ladee:telescope_boresight_j2000_y>
+      <ladee:telescope_boresight_j2000_z>-0.104845193221844</ladee:telescope_boresight_j2000_z>
+      <ladee:telescope_boresight_me_x>0.772149192722476</ladee:telescope_boresight_me_x>
+      <ladee:telescope_boresight_me_y>0.495314555224716</ladee:telescope_boresight_me_y>
+      <ladee:telescope_boresight_me_z>-0.398056673804837</ladee:telescope_boresight_me_z>
+      <ladee:telescope_earth_elongation>44.6429147332067</ladee:telescope_earth_elongation>
+      <ladee:telescope_ecliptic_declination>0</ladee:telescope_ecliptic_declination>
+      <ladee:telescope_fov_graze_altitude_above_terrain unit="m">38.1307111627746</ladee:telescope_fov_graze_altitude_above_terrain>
+      <ladee:telescope_graze_altitude unit="m">37.2979638757965</ladee:telescope_graze_altitude>
+      <ladee:telescope_graze_altitude_above_terrain unit="m">39.2179638757965</ladee:telescope_graze_altitude_above_terrain>
+      <ladee:telescope_graze_latitude>2.79481202800884</ladee:telescope_graze_latitude>
+      <ladee:telescope_graze_longitude>303.892929528934</ladee:telescope_graze_longitude>
+      <ladee:telescope_graze_solar_latitude>1.28799562159828</ladee:telescope_graze_solar_latitude>
+      <ladee:telescope_graze_solar_longitude>221.845077294615</ladee:telescope_graze_solar_longitude>
+      <ladee:telescope_solar_elongation>51.6781817054214</ladee:telescope_solar_elongation>
+      <ladee:telescope_sun_azimuth>50.2316283172077</ladee:telescope_sun_azimuth>
+      <ladee:telescope_sun_elevation>14.2227298742157</ladee:telescope_sun_elevation>
+      <ladee:telescope_target>DarkSky</ladee:telescope_target>
+      <ladee:uvs_timestamp>1195579</ladee:uvs_timestamp>
+      <ladee:valid_checksum>true</ladee:valid_checksum>
+          <!-- this was out of sequence -->
+          <ladee:predicted_attitude_flag>0</ladee:predicted_attitude_flag>
+        </ladee:UVS_Specific_Attributes>
+      </ladee:LADEE>
+
+    </Mission_Area>
+  </Observation_Area>
+  <Reference_List>
+    <Internal_Reference>
+      <lid_reference>urn:nasa:pds:ladee_uvs:document:dpsis</lid_reference>
+      <reference_type>data_to_document</reference_type>
+    </Internal_Reference>
+  </Reference_List>
+  <File_Area_Observational>
+    <File>
+      <file_name>UVS_RAW_1691l_0557.TAB</file_name>
+      <local_identifier>raw_data_file</local_identifier>
+      <creation_date_time>2014-09-17T00:25:19.639Z</creation_date_time>
+      <file_size unit="byte">7308</file_size>
+      <records>1044</records>
+    </File>
+    <Table_Character>
+      <local_identifier>raw_1691l_0557_table</local_identifier>
+      <offset unit="byte">0</offset>
+      <records>1044</records>
+      <record_delimiter>Carriage-Return Line-Feed</record_delimiter>
+      <Record_Character>
+        <fields>1</fields>
+        <groups>0</groups>
+        <record_length unit="byte">7</record_length>
+        <Field_Character>
+          <name>Counts</name>
+          <field_number>1</field_number>
+          <field_location unit="byte">1</field_location>
+          <data_type>ASCII_Integer</data_type>
+          <field_length unit="byte">5</field_length>
+          <unit>Counts</unit>
+          <description>Counts</description>
+        </Field_Character>
+      </Record_Character>
+    </Table_Character>
+  </File_Area_Observational>
+</Product_Observational>
