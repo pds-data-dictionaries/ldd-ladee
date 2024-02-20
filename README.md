@@ -7,17 +7,17 @@
    potentially mysterious cases.
 -->
 
-# {dictionary name} ({prefix:}) {"Discipline" or "Local"} Dictionary
+# LADEE Mission (ladee:) Local Dictionary
 <!-- EXAMPLES
    Spectral (sp:) Discipline Dictionary
    DART Mission (dart:) Local Dictionary
 -->
 
-The {dictionary name} dictionary provides classes and attributes for
-{brief functional description}
+The LADEE dictionary provides classes and attributes for
+the LADEE UVS instrument.
 
 ### Steward
-{steward name} ({steward GitHub handle}), {steward node}
+Lyle Huber (@lylehuber), Atmospheres Node
 <!-- EXAMPLE
      Anne Raugh (@acraugh), Small Bodies Node (SBN)
 -->
@@ -28,7 +28,7 @@ The {dictionary name} dictionary provides classes and attributes for
 does not, edit the sentence and link accordingly. -->
 The User's Guide and detailed documentation for using this dictionary in
 label design and processing
-are located at https://pds-data-dictionaries.github.io/{repo id}.
+are located at https://pds-data-dictionaries.github.io/ldd-ladee.
 <!-- EXAMPLE
      are located at https://pds-data-dictionaries.github.io/ldd-template.
 -->
