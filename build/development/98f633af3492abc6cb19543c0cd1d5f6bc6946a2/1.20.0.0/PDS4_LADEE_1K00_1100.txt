@@ -1,0 +1,1100 @@
+PDS4 Local Data Dictionary Processing Report
+
+Configuration:
+   LDDTool Version        14.3.0
+   LDD Version Id:        1.1.0.0
+   LDD Label Version Id:  1.26
+   LDD Discipline (T/F):  false
+   LDD Namespace URL:     http://pds.nasa.gov/pds4/
+   LDD URN Prefix:        urn:nasa:pds:
+   Time                   Tue Feb 20 20:38:06 UTC 2024
+   Common Schema          [PDS4_PDS_1K00.xsd]
+   Common Schematron      [PDS4_PDS_1K00.sch]
+   IM Version Id:         1.20.0.0
+   IM Namespace Id:       pds
+   IM Label Version Id:   1.26
+   IM Object Model        [UpperModel.pont]
+   IM Data Dictionary     [dd11179.pins]
+   IM Configuration File  [MDPTNConfigClassDisp.xml]
+   IM Glossary            [Glossary.pins]
+   IM Document Spec       [DMDocument.pins]
+
+Parameters:
+   Input File             [/home/runner/work/ldd-ladee/ldd-ladee/src/PDS4_LADEE_IngestLDD.xml]
+   PDS Processing         true
+   LDD Processing         true
+   Discipline LDD         false
+   Mission LDD            true
+   Write Attr Elements    false
+   Merge with Master      false
+
+Summary:
+   Classes                2
+   Attributes             90
+   Associations           91
+   Error messages         0
+   Warning messages       0
+   Information messages   0
+
+Detailed validation messages
+
+Parsed Input - Header:
+   LDD Name               LADEE Mission
+   LDD Version            1.1.0.0
+   Full Name              Lyle Huber
+   Steward                atm
+   Namespace Id           ladee
+   Comment                _TBD_Ingest_LDD
+   Last Modification Time 2023-09-15T12:00:00
+   PDS4 Merge Flag        false
+
+Parsed Input - Attributes:
+
+   name                   latitude
+   version                1.20
+   value data type        ASCII_Real
+   description            Latitude of the sub-spacecraft point in Mean Earth frame.
+   minimum value          -90.
+   maximum value          90.
+
+   name                   longitude
+   version                1.20
+   value data type        ASCII_Real
+   description            Longitude of the sub-spacecraft point in Mean Earth frame.
+   minimum value          0.
+   maximum value          360.
+
+   name                   solar_latitude
+   version                1.20
+   value data type        ASCII_Real
+   description            Latitude of the sub-spacecraft point in a selenocentric, sun-synchronous frame.
+   minimum value          -90.
+   maximum value          90.
+
+   name                   solar_longitude
+   version                1.20
+   value data type        ASCII_Real
+   description            Longitude of the sub-spacecraft point in a selenocentric, sun-synchronous frame.
+   minimum value          0.
+   maximum value          360.
+
+   name                   altitude
+   version                1.20
+   value data type        ASCII_Real
+   description            Spacecraft altitude above the lunar reference sphere (radius=1737.4 km) in km
+   minimum value          0.
+   unit of measure type   Units_of_Length
+
+   name                   altitude_above_terrain
+   version                1.20
+   value data type        ASCII_Real
+   description            Spacecraft altitude above the lunar surface in km
+   minimum value          0.
+   unit of measure type   Units_of_Length
+
+   name                   activity_number
+   version                1.20
+   value data type        ASCII_Integer
+   description            Activities are the main units of data collection for UVS. They correspond to a single instrument power cycle so spectra collected within a single activity are relatively near each other in both space and time. Also, the spacecraft was generally oriented during an activity for a single observational purpose. Activities are numbered based on an incrementing counter that named UVS data files as they were created onboard the spacecraft. Most activities generated a single file, so activity numbers are approximately a count of the number of instrument power cycles. Occultation activities are the exception because they generated enough spectra to span two data files. Occultation activities, therefore, are assigned the number given to their first file, and no activity is assigned the number given to the second file, i.e., activity numbering skips one number after each occultation.
+   minimum value          1
+
+   name                   activity_type
+   version                1.20
+   value data type        ASCII_Short_String_Preserved
+   description            A short string describing the nature of each activity.
+
+   name                   average_counts
+   version                1.20
+   value data type        ASCII_Real
+   description            Average of all pixel values (range 0-1043) in DNs or calibrated units
+   minimum value          0.
+
+   name                   cosmic_ray_hit_count
+   version                1.20
+   value data type        ASCII_NonNegative_Integer
+   description            The number of cosmic ray hits identified within the spectrum.
+   minimum value          0
+
+   name                   cosmic_ray_hit_pixel_00
+   version                1.20
+   value data type        ASCII_NonNegative_Integer
+   description            16 bits of a 1044-bit vector giving the location of hits
+   minimum value          0
+
+   name                   cosmic_ray_hit_pixel_01
+   version                1.20
+   value data type        ASCII_NonNegative_Integer
+   description            16 bits of a 1044-bit vector giving the location of hits
+   minimum value          0
+
+   name                   cosmic_ray_hit_pixel_02
+   version                1.20
+   value data type        ASCII_NonNegative_Integer
+   description            16 bits of a 1044-bit vector giving the location of hits
+   minimum value          0
+
+   name                   cosmic_ray_hit_pixel_03
+   version                1.20
+   value data type        ASCII_NonNegative_Integer
+   description            16 bits of a 1044-bit vector giving the location of hits
+   minimum value          0
+
+   name                   cosmic_ray_hit_pixel_04
+   version                1.20
+   value data type        ASCII_NonNegative_Integer
+   description            16 bits of a 1044-bit vector giving the location of hits
+   minimum value          0
+
+   name                   cosmic_ray_hit_pixel_05
+   version                1.20
+   value data type        ASCII_NonNegative_Integer
+   description            16 bits of a 1044-bit vector giving the location of hits
+   minimum value          0
+
+   name                   cosmic_ray_hit_pixel_06
+   version                1.20
+   value data type        ASCII_NonNegative_Integer
+   description            16 bits of a 1044-bit vector giving the location of hits
+   minimum value          0
+
+   name                   cosmic_ray_hit_pixel_07
+   version                1.20
+   value data type        ASCII_NonNegative_Integer
+   description            16 bits of a 1044-bit vector giving the location of hits
+   minimum value          0
+
+   name                   cosmic_ray_hit_pixel_08
+   version                1.20
+   value data type        ASCII_NonNegative_Integer
+   description            16 bits of a 1044-bit vector giving the location of hits
+   minimum value          0
+
+   name                   cosmic_ray_hit_pixel_09
+   version                1.20
+   value data type        ASCII_NonNegative_Integer
+   description            16 bits of a 1044-bit vector giving the location of hits
+   minimum value          0
+
+   name                   cosmic_ray_hit_pixel_10
+   version                1.20
+   value data type        ASCII_NonNegative_Integer
+   description            16 bits of a 1044-bit vector giving the location of hits
+   minimum value          0
+
+   name                   cosmic_ray_hit_pixel_11
+   version                1.20
+   value data type        ASCII_NonNegative_Integer
+   description            16 bits of a 1044-bit vector giving the location of hits
+   minimum value          0
+
+   name                   cosmic_ray_hit_pixel_12
+   version                1.20
+   value data type        ASCII_NonNegative_Integer
+   description            16 bits of a 1044-bit vector giving the location of hits
+   minimum value          0
+
+   name                   cosmic_ray_hit_pixel_13
+   version                1.20
+   value data type        ASCII_NonNegative_Integer
+   description            16 bits of a 1044-bit vector giving the location of hits
+   minimum value          0
+
+   name                   cosmic_ray_hit_pixel_14
+   version                1.20
+   value data type        ASCII_NonNegative_Integer
+   description            16 bits of a 1044-bit vector giving the location of hits
+   minimum value          0
+
+   name                   cosmic_ray_hit_pixel_15
+   version                1.20
+   value data type        ASCII_NonNegative_Integer
+   description            16 bits of a 1044-bit vector giving the location of hits
+   minimum value          0
+
+   name                   cosmic_ray_hit_pixel_16
+   version                1.20
+   value data type        ASCII_NonNegative_Integer
+   description            16 bits of a 1044-bit vector giving the location of hits
+   minimum value          0
+
+   name                   drive_current
+   version                1.20
+   value data type        ASCII_Real
+   description            Thermo-Electric Cooler (TEC) Drive current in mA
+   minimum value          0.
+   unit of measure type   Units_of_Current
+
+   name                   emission_angle
+   version                1.20
+   value data type        ASCII_Real
+   description            If the UVS telescope boresight intersects the lunar reference sphereoid, this is the angle at the intersection between the surface normal and the vector to LADEE in degrees. 0 otherwise. Calculated by SPICE ilumin_c(). 
+   minimum value          0.
+   maximum value          180.
+
+   name                   in_sun
+   version                1.20
+   value data type        ASCII_Integer
+   description            An integer representing three bits. Each bit represents a geometric calculation asking whether the upper limb of the sun is above the lunar limb (including terrain) at (bit 0) the spectrum’s timestamp, (bit 1) 1 second before the start of data collection, and (bit 2) 1 second after the end of data collection. The 1 second buffers were chosen to be slightly conservative. A value of 0 means ‘definitely in shadow’ and 7 means ‘definitely in sun’. Intermediate reflect intermediate knowledge. 
+   minimum value          0
+   maximum value          7
+
+   name                   integration_time
+   version                1.20
+   value data type        ASCII_Integer
+   description            The detector integration time for each scan, in milliseconds. 
+   minimum value          8
+   maximum value          65535
+   unit of measure type   Units_of_Time
+
+   name                   moon_fixed_vx
+   version                1.20
+   value data type        ASCII_Real
+   description            X coordinate of the spacecraft velocity in rectangular coordinates in Mean Earth frame and in km/s 
+   unit of measure type   Units_of_Velocity
+
+   name                   moon_fixed_vy
+   version                1.20
+   value data type        ASCII_Real
+   description            Y coordinate of the spacecraft velocity in rectangular coordinates in Mean Earth frame and in km/s 
+   unit of measure type   Units_of_Velocity
+
+   name                   moon_fixed_vz
+   version                1.20
+   value data type        ASCII_Real
+   description            Z coordinate of the spacecraft velocity in rectangular coordinates in Mean Earth frame and in km/s 
+   unit of measure type   Units_of_Velocity
+
+   name                   moon_fixed_x
+   version                1.20
+   value data type        ASCII_Real
+   description            X coordinate of the spacecraft position in rectangular coordinates in Mean Earth frame and in km 
+   unit of measure type   Units_of_Length
+
+   name                   moon_fixed_y
+   version                1.20
+   value data type        ASCII_Real
+   description            Y coordinate of the spacecraft position in rectangular coordinates in Mean Earth frame and in km 
+   unit of measure type   Units_of_Length
+
+   name                   moon_fixed_z
+   version                1.20
+   value data type        ASCII_Real
+   description            Z coordinate of the spacecraft position in rectangular coordinates in Mean Earth frame and in km 
+   unit of measure type   Units_of_Length
+
+   name                   peak_counts
+   version                1.20
+   value data type        ASCII_Integer
+   description            Maximum value in the spectrum, either in DNs or in calibrated units 
+   minimum value          0
+
+   name                   phase_angle
+   version                1.20
+   value data type        ASCII_Real
+   description            If the UVS telescope boresight intersects the lunar reference sphereoid, this is the angle at the intersection between the sun vector and the vector to LADEE, in degrees. 0 otherwise. Calculated by SPICE ilumin_c(). 
+
+   name                   quaternion_w
+   version                1.20
+   value data type        ASCII_Real
+   description            W component of the spacecraft attitude quaternion in J2000 frame, estimated on-board by flight software. w is the scalar term. 
+   minimum value          -1.
+   maximum value          1.
+
+   name                   quaternion_x
+   version                1.20
+   value data type        ASCII_Real
+   description            X component of the spacecraft attitude quaternion in J2000 frame, estimated on-board by flight software. w is the scalar term. 
+   minimum value          -1.
+   maximum value          1.
+
+   name                   quaternion_y
+   version                1.20
+   value data type        ASCII_Real
+   description            Y component of the spacecraft attitude quaternion in J2000 frame, estimated on-board by flight software. w is the scalar term. 
+   minimum value          -1.
+   maximum value          1.
+
+   name                   quaternion_z
+   version                1.20
+   value data type        ASCII_Real
+   description            Z component of the spacecraft attitude quaternion in J2000 frame, estimated on-board by flight software. w is the scalar term. 
+   minimum value          -1.
+   maximum value          1.
+
+   name                   raw_timestamp
+   version                1.20
+   value data type        ASCII_Integer
+   description            Uncorrected timestamp applied by the s/c relative to the J2000 epoch in units of subseconds (2^-16 sec). This timestamp was applied to each spectrum as soon as it had been fully received by flight software from the UVS instrument. 
+
+   name                   saturated_pixel_count
+   version                1.20
+   value data type        ASCII_Integer
+   description            Number of pixels above a threshold value. Currently 60000 counts.
+
+   name                   scan_number
+   version                1.20
+   value data type        ASCII_Integer
+   description            A sequence number assigned to each spectrum by the instrument. This number starts at 0 every time the instrument is commanded to capture a stream of spectra with the same integration time and spacing in time. During some activities, the integration time, spacing or both were changed, causing this number to be reset one or more times.
+   minimum value          0
+
+   name                   sequence_number
+   version                1.20
+   value data type        ASCII_Integer
+   description            A sequence number assigned to each spectrum within an activity. This number does not reset within an activity, so the activity_number, sequence_number pair forms a unique identifier for each spectrum just as each spectrum’s timestamp is unique.
+   minimum value          0
+
+   name                   solar_incidence_angle
+   version                1.20
+   value data type        ASCII_Real
+   description            If the UVS telescope boresight intersects the lunar reference sphereoid, this is the angle at the intersection between the sun vector and surface normal. 0 otherwise. Calculated by SPICE ilumin_c().
+   minimum value          0.
+   maximum value          180.
+
+   name                   solar_viewer_boresight_j2000_x
+   version                1.20
+   value data type        ASCII_Real
+   description            X coordinate of the normalized solar-viewer boresight vector in J2000 frame.
+   minimum value          -1.
+   maximum value          1.
+
+   name                   solar_viewer_boresight_j2000_y
+   version                1.20
+   value data type        ASCII_Real
+   description            Y coordinate of the normalized solar-viewer boresight vector in J2000 frame.
+   minimum value          -1.
+   maximum value          1.
+
+   name                   solar_viewer_boresight_j2000_z
+   version                1.20
+   value data type        ASCII_Real
+   description            Z coordinate of the normalized solar-viewer boresight vector in J2000 frame.
+   minimum value          -1.
+   maximum value          1.
+
+   name                   solar_viewer_boresight_me_x
+   version                1.20
+   value data type        ASCII_Real
+   description            X coordinate of the normalized solar-viewer boresight vector in rectangular Mean Earth frame.
+   minimum value          -1.
+   maximum value          1.
+
+   name                   solar_viewer_boresight_me_y
+   version                1.20
+   value data type        ASCII_Real
+   description            Y coordinate of the normalized solar-viewer boresight vector in rectangular Mean Earth frame.
+   minimum value          -1.
+   maximum value          1.
+
+   name                   solar_viewer_boresight_me_z
+   version                1.20
+   value data type        ASCII_Real
+   description            Z coordinate of the normalized solar-viewer boresight vector in rectangular Mean Earth frame.
+   minimum value          -1.
+   maximum value          1.
+
+   name                   solar_viewer_fov_graze_altitude_above_terrain
+   version                1.20
+   value data type        ASCII_Real
+   description            The circular edge of the solar viewer field-of-view corresponds to a cone rooted at the spacecraft. This value is the closest approach of that cone to terrain in km, or 0 if the cone intersects.
+   minimum value          0.
+
+   name                   solar_viewer_graze_altitude
+   version                1.20
+   value data type        ASCII_Real
+   description            The closest approach of the solar-viewer boresight vector to the lunar reference sphere, or 0 if it intersects 
+   minimum value          0.
+
+   name                   solar_viewer_graze_altitude_above_terrain
+   version                1.20
+   value data type        ASCII_Real
+   description            The closest approach of the solar-viewer boresight vector to terrain in km, or 0 if it intersects
+
+   name                   solar_viewer_graze_latitude
+   version                1.20
+   value data type        ASCII_Real
+   description            Latitude in Mean Earth frame of the intersection of the solar viewer boresight vector and the LRO lunar reference sphere or the closest point on the reference sphere to that vector.
+   minimum value          -90.
+   maximum value          90.
+
+   name                   solar_viewer_graze_longitude
+   version                1.20
+   value data type        ASCII_Real
+   description            Longitude in Mean Earth frame of the intersection of the solar viewer boresight vector and the LRO lunar reference sphere or the closest point on the reference sphere to that vector.
+   minimum value          0.
+   maximum value          360.
+
+   name                   solar_viewer_graze_solar_latitude
+   version                1.20
+   value data type        ASCII_Real
+   description            Latitude in a selenocentric, sun-synchronous frame of the intersection of the solar occultation viewer boresight vector and the lunar reference sphere or the closest point on the reference sphere to that vector. 
+   minimum value          -90.
+   maximum value          90.
+
+   name                   solar_viewer_graze_solar_longitude
+   version                1.20
+   value data type        ASCII_Real
+   description            Longitude in a selenocentric, sun-synchronous frame of the intersection of the solar occultation viewer boresight vector and the lunar reference sphere or the closest point on the reference sphere to that vector. 
+   minimum value          0.
+   maximum value          360.
+
+   name                   solar_viewer_solar_elongation
+   version                1.20
+   value data type        ASCII_Real
+   description            Angle between the solar viewer boresight and the sun vector, in degrees 
+
+   name                   solar_viewer_target
+   version                1.20
+   value data type        ASCII_Short_String_Preserved
+   description            A short string describing what is in the solar viewer’s field-of-view. 
+
+   name                   sun_graze_altitude_above_terrain
+   version                1.20
+   value data type        ASCII_Real
+   description            The circular limb of the sun corresponds to a cone rooted at the spacecraft. This value is the closest approach of that cone to terrain in km, or 0 if the cone intersects terrain.
+   minimum value          0.
+
+   name                   tec_cold
+   version                1.20
+   value data type        ASCII_Real
+   description            Thermo-electric cooler cold-side temperature, which is the best estimate of the temperature of the detector, in degrees centigrade
+   unit of measure type   Units_of_Temperature
+
+   name                   tec_enabled
+   version                1.20
+   value data type        ASCII_Boolean
+   description            Indicates whether the Thermo-electric cooler is active. 
+
+   name                   tec_hot
+   version                1.20
+   value data type        ASCII_Real
+   description            Thermo-electric cooler hot-side temperature, in degrees centigrade 
+   unit of measure type   Units_of_Temperature
+
+   name                   tec_setpoint
+   version                1.20
+   value data type        ASCII_Real
+   description            The target temperature, in degrees C, to which the UVS’ thermo-electric cooler has been configured to drive the detector temperature. 
+   unit of measure type   Units_of_Temperature
+
+   name                   telescope_boresight_j2000_x
+   version                1.20
+   value data type        ASCII_Real
+   description            X coordinate of the normalized telescope boresight vector in rectangular J2000 frame 
+   minimum value          -1.
+   maximum value          1.
+
+   name                   telescope_boresight_j2000_y
+   version                1.20
+   value data type        ASCII_Real
+   description            Y coordinate of the normalized telescope boresight vector in rectangular J2000 frame 
+   minimum value          -1.
+   maximum value          1.
+
+   name                   telescope_boresight_j2000_z
+   version                1.20
+   value data type        ASCII_Real
+   description            Z coordinate of the normalized telescope boresight vector in rectangular J2000 frame 
+   minimum value          -1.
+   maximum value          1.
+
+   name                   telescope_boresight_me_x
+   version                1.20
+   value data type        ASCII_Real
+   description            X coordinate of the normalized telescope boresight vector in rectangular Mean Earth frame 
+   minimum value          -1.
+   maximum value          1.
+
+   name                   telescope_boresight_me_y
+   version                1.20
+   value data type        ASCII_Real
+   description            Y coordinate of the normalized telescope boresight vector in rectangular Mean Earth frame 
+   minimum value          -1.
+   maximum value          1.
+
+   name                   telescope_boresight_me_z
+   version                1.20
+   value data type        ASCII_Real
+   description            Z coordinate of the normalized telescope boresight vector in rectangular Mean Earth frame 
+   minimum value          -1.
+   maximum value          1.
+
+   name                   telescope_earth_elongation
+   version                1.20
+   value data type        ASCII_Real
+   description            Angle between the telescope boresight vector and the Earth vector, in degrees 
+   maximum value          360.
+
+   name                   telescope_ecliptic_declination
+   version                1.20
+   value data type        ASCII_Real
+   description            Angle between the telescope boresight vector and the plane of the ecliptic 
+   minimum value          -90.
+   maximum value          90.
+
+   name                   telescope_fov_graze_altitude_above_terrain
+   version                1.20
+   value data type        ASCII_Real
+   description            Altitude above terrain in km of the vector through the edge of the telescope field of view closest to the moon center or 0 if the vector intersects terrain 
+   minimum value          0.
+   unit of measure type   Units_of_Length
+
+   name                   telescope_graze_altitude
+   version                1.20
+   value data type        ASCII_Real
+   description            Altitude above the reference sphere in km of the telescope boresight vector or 0 if the vector intersects the reference sphere 
+   minimum value          0.
+   unit of measure type   Units_of_Length
+
+   name                   telescope_graze_altitude_above_terrain
+   version                1.20
+   value data type        ASCII_Real
+   description            Altitude above terrain in km of the telescope boresight vector or 0 if the vector intersects terrain 
+   minimum value          0.
+   unit of measure type   Units_of_Length
+
+   name                   telescope_graze_latitude
+   version                1.20
+   value data type        ASCII_Real
+   description            Latitude in Mean Earth frame of the intersection of the telescope boresight vector and the lunar reference sphere or the closest point on the reference sphere to that vector. 
+   minimum value          -90.
+   maximum value          90.
+
+   name                   telescope_graze_longitude
+   version                1.20
+   value data type        ASCII_Real
+   description            Longitude in Mean Earth frame of the intersection of the telescope boresight vector and the lunar reference sphere or the closest point on the reference sphere to that vector. 
+   minimum value          0.
+   maximum value          360.
+
+   name                   telescope_graze_solar_latitude
+   version                1.20
+   value data type        ASCII_Real
+   description            Latitude in a selenocentric, sun-synchronous frame of the intersection of the telescope boresight vector and the lunar reference sphere or the closest point on the reference sphere to that vector. 
+   minimum value          -90.
+   maximum value          90.
+
+   name                   telescope_graze_solar_longitude
+   version                1.20
+   value data type        ASCII_Real
+   description            Longitude in a selenocentric, sun-synchronous frame of the intersection of the telescope boresight vector and the lunar reference sphere or the closest point on the reference sphere to that vector.
+   minimum value          0.
+   maximum value          360.
+
+   name                   telescope_solar_elongation
+   version                1.20
+   value data type        ASCII_Real
+   description            Angle between the telescope boresight and the sun vector in degrees 
+
+   name                   telescope_sun_azimuth
+   version                1.20
+   value data type        ASCII_Real
+   description            Azimuth in degrees of the sun vector in UVS telescope frame. This is approximately the angle between the Telescope boresight and the sun vector projected onto the LADEE radiator panel 
+   minimum value          -180.
+   maximum value          180.
+
+   name                   telescope_sun_elevation
+   version                1.20
+   value data type        ASCII_Real
+   description            Elevation in degrees of the sun vector in UVS telescope frame. This is approximately the angle between the sun vector and the LADEE radiator on which UVS is mounted 
+   nillable               true
+   minimum value          -90.
+   maximum value          90.
+
+   name                   telescope_target
+   version                1.20
+   value data type        ASCII_Short_String_Preserved
+   description            A short string describing what is in the telescope’s field-of-view. 
+   nillable               true
+
+   name                   uvs_timestamp
+   version                1.20
+   value data type        ASCII_Integer
+   description            A timestamp applied to the spectrum by the UVS instrument, in msec since UVS’ firmware booted. This provides a way to measure relative time that is independent of the spacecraft clock. It is not synchronized with that clock, and it starts at 0 during every UVS activity.
+   minimum value          0
+
+   name                   valid_checksum
+   version                1.20
+   value data type        ASCII_Boolean
+   description            True if the packet received by the spacecraft from UVS contained one spectrum with a valid checksum, False otherwise. 
+
+   name                   predicted_attitude_flag
+   version                1.20
+   value data type        ASCII_Integer
+   description            0 indicates spacecraft attitude estimated onboard by flight software was used to generate the metadata for this spectrum. 1 indicates that the attitude commanded by ground controllers was used. Onboard estimated attitudes were used for all spectra except when they were unavailable.
+   minimum value          0
+   maximum value          1
+
+Parsed Input - Classes:
+
+   name                   UVS_Specific_Attributes
+   description            The UVS Specific Attributes class provides local attributes used by UVS observations.
+   is abstract            false
+   is choice              false
+   subclass of            USER
+
+   Associations
+
+      local identifier      ladee.latitude
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.longitude
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.solar_latitude
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.solar_longitude
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.altitude
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.altitude_above_terrain
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.activity_number
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.activity_type
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.average_counts
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.cosmic_ray_hit_count
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.cosmic_ray_hit_pixel_00
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.cosmic_ray_hit_pixel_01
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.cosmic_ray_hit_pixel_02
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.cosmic_ray_hit_pixel_03
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.cosmic_ray_hit_pixel_04
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.cosmic_ray_hit_pixel_05
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.cosmic_ray_hit_pixel_06
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.cosmic_ray_hit_pixel_07
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.cosmic_ray_hit_pixel_08
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.cosmic_ray_hit_pixel_09
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.cosmic_ray_hit_pixel_10
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.cosmic_ray_hit_pixel_11
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.cosmic_ray_hit_pixel_12
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.cosmic_ray_hit_pixel_13
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.cosmic_ray_hit_pixel_14
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.cosmic_ray_hit_pixel_15
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.cosmic_ray_hit_pixel_16
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.drive_current
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.emission_angle
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.in_sun
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.integration_time
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.moon_fixed_vx
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.moon_fixed_vy
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.moon_fixed_vz
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.moon_fixed_x
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.moon_fixed_y
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.moon_fixed_z
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.peak_counts
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.phase_angle
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.quaternion_w
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.quaternion_x
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.quaternion_y
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.quaternion_z
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.raw_timestamp
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.saturated_pixel_count
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.scan_number
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.sequence_number
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.solar_incidence_angle
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.solar_viewer_boresight_j2000_x
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.solar_viewer_boresight_j2000_y
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.solar_viewer_boresight_j2000_z
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.solar_viewer_boresight_me_x
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.solar_viewer_boresight_me_y
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.solar_viewer_boresight_me_z
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.solar_viewer_fov_graze_altitude_above_terrain
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.solar_viewer_graze_altitude
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.solar_viewer_graze_altitude_above_terrain
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.solar_viewer_graze_latitude
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.solar_viewer_graze_longitude
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.solar_viewer_graze_solar_latitude
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.solar_viewer_graze_solar_longitude
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.solar_viewer_solar_elongation
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.solar_viewer_target
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.sun_graze_altitude_above_terrain
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.tec_cold
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.tec_enabled
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.tec_hot
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.tec_setpoint
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.telescope_boresight_j2000_x
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.telescope_boresight_j2000_y
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.telescope_boresight_j2000_z
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.telescope_boresight_me_x
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.telescope_boresight_me_y
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.telescope_boresight_me_z
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.telescope_earth_elongation
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.telescope_ecliptic_declination
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.telescope_fov_graze_altitude_above_terrain
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.telescope_graze_altitude
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.telescope_graze_altitude_above_terrain
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.telescope_graze_latitude
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.telescope_graze_longitude
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.telescope_graze_solar_latitude
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.telescope_graze_solar_longitude
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.telescope_solar_elongation
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.telescope_sun_azimuth
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.telescope_sun_elevation
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.telescope_target
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.uvs_timestamp
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.valid_checksum
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      ladee.predicted_attitude_flag
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        attribute_of
+
+   name                   LADEE
+   description            This is the umbrella class for the LADEE mission dictionary.
+   is abstract            false
+   is choice              false
+   subclass of            USER
+
+   Associations
+
+      local identifier      ladee:UVS_Attributes
+      minimum occurrences   1
+      maximum occurrences   1
+      reference type        component_of
+
+End of Report
